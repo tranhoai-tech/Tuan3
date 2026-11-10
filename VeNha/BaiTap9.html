@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>Bài tập 9 - Font Awesome</title>
+  <!-- Nhúng Font Awesome 4.7 qua CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f2f4f7;
+      margin: 0;
+      padding: 30px;
+    }
+    h2 { text-align: center; color: #333; }
+    .menu {
+      list-style: none;
+      margin: 0 auto 30px;
+      padding: 0;
+      text-align: center;
+    }
+    .menu li { display: inline-block; margin: 0 6px; }
+    .menu a {
+      display: inline-block;
+      padding: 12px 22px;
+      background: #2b2f33;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .menu a:hover { background: #00a8e8; }
+    .menu i { margin-right: 8px; }
+
+    .card {
+      width: 420px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px 30px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    }
+    .card p { font-size: 16px; color: #444; }
+    .card i { width: 28px; color: #00a8e8; }
+    .social { text-align: center; margin-top: 20px; font-size: 32px; }
+    .social a { color: #2b2f33; margin: 0 10px; }
+    .card .social i { width: auto; color: inherit; }
+    .social a:hover { color: #00a8e8; }
+  </style>
+</head>
+<body>
+  <h2><i class="fa fa-graduation-cap"></i> Khoa CNTTKD - UEH</h2>
+
+  <ul class="menu">
+    <li><a href="#"><i class="fa fa-home"></i>Trang chủ</a></li>
+    <li><a href="#"><i class="fa fa-book"></i>Bài tập</a></li>
+    <li><a href="#"><i class="fa fa-envelope"></i>Liên hệ</a></li>
+    <li><a href="#"><i class="fa fa-download"></i>Tải về</a></li>
+  </ul>
+
+  <div class="card">
+    <p><i class="fa fa-user"></i>Sinh viên: Trần Thị Hoài</p>
+    <p><i class="fa fa-map-marker"></i>Đại học Kinh tế TP.HCM (UEH)</p>
+    <p><i class="fa fa-phone"></i>0345455711</p>
+    <p><i class="fa fa-envelope-o"></i>hoaitran.31241027889@st.ueh.edu.vn</p>
+    <div class="social">
+      <a href="#"><i class="fa fa-facebook-square"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+      <a href="#"><i class="fa fa-linkedin-square"></i></a>
+      <a href="#"><i class="fa fa-youtube-play"></i></a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>Bài tập 2 - Định dạng đoạn văn</title>
+  <style>
+    /* Câu 2d: logo BIT 30px làm hình nền, lặp lại và cố định */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("imgs/logo_BIT.png"), url("https://bit.ueh.edu.vn/wp-content/uploads/2017/06/BIT_logo.png");
+  background-size: 30px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 20px;
+}
+.box {
+  background: rgba(255, 255, 255, 0.75);
+  margin: 0 auto 20px;
+  padding: 10px 20px;
+  max-width: 500px;
+}
+
+    /* Câu 2a: chữ xanh, canh giữa, in đậm, gạch chân, 30px */
+    .uni {
+      color: blue;
+      text-align: center;
+      font-weight: bold;
+      text-decoration: underline;
+      font-size: 30px;
+    }
+
+    /* Câu 2b: chữ đỏ, canh phải, in nghiêng, viền chấm vàng bo góc, nền xám, 15px, chữ mờ 50% */
+    .khoa {
+      color: rgba(255, 0, 0, 0.5);   /* chữ mờ 50% (chỉ làm mờ chữ, không làm mờ nền/viền) */
+      text-align: right;
+      font-style: italic;
+      border: 3px dotted yellow;
+      border-radius: 12px;
+      background-color: gray;
+      font-size: 15px;
+      padding: 8px 12px;
+    }
+
+    /* Câu 2c: hiệu ứng chữ BIT-UEH */
+    .bit-ueh {
+      display: inline-block;
+      font-size: 48px;
+      font-weight: bold;
+      color: #e8f6ff;
+      padding: 10px 20px;
+      background: radial-gradient(ellipse at center, #f4ec7a 0%, #b9c93a 60%, #e9f0a8 100%);
+      text-shadow: 0 0 4px #8b0000, 0 0 8px #8b0000, 0 0 14px #c00000, 2px 2px 3px #5a0000;
+    }
+
+    /* Câu 2e: đoạn văn Nhu cầu xã hội Ngành TMĐT */
+.tmdt {
+  width: 100px;
+  height: 50px;
+  border: 1px solid #333;
+  background: #fff;
+}
+
+/* i. Rộng 100px, cao 50px, ẩn nội dung khi bị tràn */
+.tmdt-i {
+  overflow: hidden;
+}
+
+/* ii. Cắt nội dung bị tràn bằng chữ "..." */
+.tmdt-ii {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* iii. white-space: nowrap;*/
+.tmdt-iii {
+
+  white-space: nowrap;
+}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h3>a. Đại học UEH</h3>
+    <p class="uni">Đại học UEH</p>
+  </div>
+
+  <div class="box">
+    <h3>b. Khoa CNTTKD</h3>
+    <p class="khoa">Khoa CNTTKD</p>
+  </div>
+
+  <div class="box">
+    <h3>c. Chữ BIT-UEH</h3>
+    <p class="bit-ueh">BIT-UEH</p>
+  </div>
+
+  <div class="box">
+    <h3>d. Logo BIT làm hình nền (nhìn ra phía sau các khung trắng)</h3>
+    <p>Hình nền lặp lại với kích thước 30px và cố định khi cuộn trang.</p>
+  </div>
+
+  <div class="box">
+  <h3>e. Đoạn văn</h3>
+
+  <h4>i. Rộng 100px, cao 50px, ẩn nội dung khi bị tràn</h4>
+  <p class="tmdt tmdt-i">Nhu cầu xã hội Ngành Thương mại điện tử (TMĐT) tại Việt Nam hiện nay đang có những bước tăng trưởng mạnh mẽ và ngày càng đóng góp nhiều hơn cho sự phát triển kinh tế xã hội của đất nước. Thị trường TMĐT Việt Nam đã trở nên sôi động hơn khi có nhiều</p>
+
+  <h4>ii. Cắt nội dung bị tràn bằng chữ ...</h4>
+  <p class="tmdt tmdt-ii">Nhu cầu xã hội Ngành Thương mại điện tử (TMĐT) tại Việt Nam hiện nay đang có những bước tăng trưởng mạnh mẽ và ngày càng đóng góp nhiều hơn cho sự phát triển kinh tế xã hội của đất nước. Thị trường TMĐT Việt Nam đã trở nên sôi động hơn khi có nhiều</p>
+
+  <h4>iii. white-space: nowrap;</h4>
+  <p class="tmdt tmdt-iii">Nhu cầu xã hội Ngành Thương mại điện tử (TMĐT) tại Việt Nam hiện nay đang có những bước tăng trưởng mạnh mẽ và ngày càng đóng góp nhiều hơn cho sự phát triển kinh tế xã hội của đất nước. Thị trường TMĐT Việt Nam đã trở nên sôi động hơn khi có nhiều</p>
+</div>
+</body>
+</html>

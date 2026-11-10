@@ -1,0 +1,86 @@
+/* ===== Bài tập 8b - css2: The Bat Family ===== */
+
+/* Khung chứa lớn: rộng 1024px, canh giữa trang */
+#root {
+  width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Tiêu đề trang */
+#site-header {
+  text-align: center;
+  margin: 30px 0 25px;
+  padding: 14px 0;
+  background-color: #cfcfcf;                 /* màu nền */
+  color: #fff;
+  font-size: 30px;
+  text-shadow: 2px 2px 3px #333;
+}
+/* Hình logo dơi đặt bên trái chữ */
+#site-header > span {
+  display: inline-block;
+  padding-left: 62px;
+  background-image: url("../imgs/logo.png"); /* hình nền */
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 52px auto;
+}
+
+/* Danh sách siêu anh hùng */
+.superheroes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.superheroes li {
+  width: 17%;
+  display: inline-block;
+  position: relative;
+  margin: 0 3px;
+  vertical-align: top;
+  transition: width 0.3s;
+}
+.superheroes img {
+  display: block;
+  max-width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+}
+.superheroes .hero-header {
+  position: absolute;
+  top: 6px;
+  left: 2px;
+  right: 2px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+  text-shadow: 1px 1px 2px #333;
+}
+
+/* Thẻ a (Read more) */
+.superheroes a {
+  display: none;                /* ẩn mặc định */
+  width: 100%;
+  padding: 6px 0;
+  background-color: #777;
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+/* Hover */
+.superheroes li:hover {
+  width: 22%;                   /* tăng chiều rộng */
+}
+.superheroes li:hover .hero-header {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 2px;
+  padding: 6px 0;
+  border-radius: 12px 12px 0 0;
+}
+.superheroes li:hover a {
+  display: block;               /* hiển thị Read more */
+  text-decoration: underline;   /* gạch chân */
+}

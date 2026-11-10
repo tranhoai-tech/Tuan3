@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Học web chuẩn</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fff;
+    }
+    .portfolio {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #f9f9f9;
+    }
+    .portfolio h2 {
+      text-align: center;
+      font-size: 18px;
+      color: #333;
+      margin: 0;
+      padding: 25px 0 20px;
+      position: relative;
+    }
+    /* gạch chân nhỏ màu xanh dưới tiêu đề */
+    .portfolio h2::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 2px;
+      background: #2a9d9d;
+      margin: 12px auto 0;
+    }
+    .list-tab {
+      list-style: none;
+      margin: 0;
+      padding: 0 0 25px;
+      text-align: center;
+    }
+    .list-tab li {
+      display: inline-block;
+      margin: 0 8px;
+    }
+    .list-tab a {
+      font-size: 11px;
+      font-weight: bold;
+      color: #555;
+      text-decoration: none;
+    }
+    .list-tab li:first-child a,
+    .list-tab a:hover {
+      color: #2a9d9d;              /* mục đang chọn / hover */
+    }
+    .galerry {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;             /* 3 ảnh / hàng */
+    }
+    .galerry li {
+      width: 33.333%;
+      padding: 0 5px 10px;
+    }
+    .galerry a { display: block; }
+    .galerry img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <section class="portfolio">
+    <h2>MY PORTFOLIO</h2>
+    <ul class="list-tab">
+      <li><a href="./">All</a></li>
+      <li><a href="./">Web App</a></li>
+      <li><a href="./">UI/UX</a></li>
+      <li><a href="./">Graphics Design</a></li>
+      <li><a href="./">Mobile App</a></li>
+      <li><a href="./">Branding</a></li>
+      <li><a href="./">Marketing</a></li>
+    </ul>
+    <ul class="galerry">
+      <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt=""></a></li>
+      <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt=""></a></li>
+      <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt=""></a></li>
+      <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt=""></a></li>
+      <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt=""></a></li>
+      <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt=""></a></li>
+      <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt=""></a></li>
+      <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt=""></a></li>
+      <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt=""></a></li>
+    </ul>
+  </section>
+</body>
+</html>
