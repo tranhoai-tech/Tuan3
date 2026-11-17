@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Exercise 8.1 - Enabling/Disabling JavaScript</title>
+   <link rel="stylesheet" type="text/css" href="../css/lab08.css" />
+</head>
+<body>
+<a href="../index.html" style="position:fixed;right:12px;bottom:12px;z-index:9999;background:#1f4e79;color:#fff;padding:6px 12px;border-radius:6px;font:14px Arial,sans-serif;text-decoration:none;opacity:.92">&larr; Lab 08</a>
+<header>
+  <h1>Exercise 8.1 – Enabling/Disabling JavaScript</h1>
+</header>
+
+<p>Trang kiểm tra cục bộ (thay cho trang JavaScriptTest.php của tác giả). Bật JavaScript rồi tải lại trang, sau đó tắt
+JavaScript (Chrome: F12 &rarr; Ctrl+Shift+P &rarr; gõ <code>Disable JavaScript</code>) và tải lại để so sánh.</p>
+
+<h2 id="js-status"><noscript>You have JavaScript disabled</noscript></h2>
+
+<script>
+  // Dòng này chỉ chạy khi JavaScript đang được bật
+  document.getElementById("js-status").innerHTML = "You have JavaScript enabled";
+</script>
+
+<footer>
+  <p><em>Copyright &copy; 2015</em></p>
+</footer>
+</body>
+</html>

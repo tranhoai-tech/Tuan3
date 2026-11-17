@@ -1,0 +1,82 @@
+[
+ {
+  "id": 1,
+  "name": "Amsterdam"
+ },
+ {
+  "id": 2,
+  "name": "Athens"
+ },
+ {
+  "id": 3,
+  "name": "Bangkok"
+ },
+ {
+  "id": 4,
+  "name": "Barcelona"
+ },
+ {
+  "id": 5,
+  "name": "Berlin"
+ },
+ {
+  "id": 6,
+  "name": "Buenos Aires"
+ },
+ {
+  "id": 7,
+  "name": "Cairo"
+ },
+ {
+  "id": 8,
+  "name": "Calgary"
+ },
+ {
+  "id": 9,
+  "name": "Florence"
+ },
+ {
+  "id": 10,
+  "name": "Ho Chi Minh City"
+ },
+ {
+  "id": 11,
+  "name": "London"
+ },
+ {
+  "id": 12,
+  "name": "Madrid"
+ },
+ {
+  "id": 13,
+  "name": "Nassau"
+ },
+ {
+  "id": 14,
+  "name": "New York"
+ },
+ {
+  "id": 15,
+  "name": "Ottawa"
+ },
+ {
+  "id": 16,
+  "name": "Paris"
+ },
+ {
+  "id": 17,
+  "name": "Rome"
+ },
+ {
+  "id": 18,
+  "name": "Sydney"
+ },
+ {
+  "id": 19,
+  "name": "Tokyo"
+ },
+ {
+  "id": 20,
+  "name": "Vancouver"
+ }
+]

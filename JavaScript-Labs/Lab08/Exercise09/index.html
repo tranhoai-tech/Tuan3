@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Lab 8</title>
+   <link rel="stylesheet" type="text/css" href="../css/lab08.css" />
+   <script type="text/javascript" language="javascript" src="js/lab08-exercise09.js"></script>
+</head>
+<body>
+<a href="../index.html" style="position:fixed;right:12px;bottom:12px;z-index:9999;background:#1f4e79;color:#fff;padding:6px 12px;border-radius:6px;font:14px Arial,sans-serif;text-decoration:none;opacity:.92">&larr; Lab 08</a>
+<header>
+  <h1>More Function Fun</h1>
+</header>
+
+<table class="cart">
+   <tr class="normal">
+      <th>Price</th>
+      <td>$15.00</td>
+   </tr>
+   <tr class="normal">
+      <th>Quantity</th>
+      <td>2</td>
+   </tr>
+   <tr class="normal">
+      <th>Tax</th>
+      <td>$1.50</td>
+   </tr>
+   <tr class="total">
+      <th>Total</th>
+      <td>
+      <script>
+         var amount = calculateTotal(15, 2);
+         document.write("$" + amount.toFixed(2));
+      </script>
+      </td>
+   </tr>
+</table>
+
+</body>
+</html>
