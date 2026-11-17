@@ -4,11 +4,11 @@
 
 | | |
 |---|---|
-| Họ và tên | **NGUYỄN VĂN A** *(sửa lại)* |
-| Mã số sinh viên | 31211000001 *(sửa lại)* |
-| Lớp học phần | ... *(sửa lại)* |
-| GitHub | https://github.com/USERNAME *(sửa lại)* |
-| GitHub Pages | https://USERNAME.github.io/REPOSITORY/JavaScript-Labs/ *(sửa lại)* |
+| Họ và tên | **TRẦN THỊ HOÀI** *(sửa lại)* |
+| Mã số sinh viên | 31241027889 |
+| Lớp học phần | 26C1INF50902701 |
+| GitHub | https://github.com/tranhoai-tech |
+| GitHub Pages | https://tranhoai-tech.github.io/Tuan3/JavaScript-Labs/ |
 
 ## 2. Mục tiêu
 
