@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tổng quan bài học về thiết kế giao diện responsive bằng CSS." />
+    <title>Bài học hôm nay | Front-end</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: Inter, "Segoe UI", Arial, sans-serif;
+        color: #172033;
+        background: #f4f7fb;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; min-height: 100vh; }
+      .page { width: min(960px, calc(100% - 40px)); margin: 0 auto; padding: 32px 0 56px; }
+      header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 64px; }
+      .brand { color: #173b77; font-weight: 800; letter-spacing: .02em; }
+      .tag { color: #52627a; font-size: .9rem; }
+      .hero { padding: 44px; border-radius: 24px; color: white; background: linear-gradient(125deg, #173b77, #3979cf); box-shadow: 0 18px 45px #173b7729; }
+      .eyebrow { margin: 0 0 12px; color: #c4dcff; font-size: .8rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+      h1 { max-width: 650px; margin: 0; font-size: clamp(2rem, 6vw, 3.4rem); line-height: 1.1; }
+      .hero p:last-child { max-width: 620px; margin: 18px 0 0; color: #e3efff; font-size: 1.05rem; line-height: 1.7; }
+      .content { display: grid; grid-template-columns: 1.2fr .8fr; gap: 22px; margin-top: 24px; }
+      .card { padding: 28px; border: 1px solid #e5eaf2; border-radius: 18px; background: white; box-shadow: 0 8px 24px #18365b0a; }
+      h2 { margin: 0 0 14px; font-size: 1.25rem; }
+      .card p { margin: 0; color: #56647a; line-height: 1.75; }
+      ul { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
+      li { display: flex; gap: 10px; align-items: flex-start; color: #46546a; line-height: 1.5; }
+      li span { color: #2870c8; font-weight: 800; }
+      .lesson-link { display: inline-flex; align-items: center; gap: 10px; margin-top: 22px; padding: 13px 18px; border-radius: 11px; color: white; background: #2468bd; font-weight: 700; text-decoration: none; transition: background .2s, transform .2s; }
+      .lesson-link:hover { background: #174d91; transform: translateY(-2px); }
+      footer { margin-top: 30px; color: #7b8799; font-size: .9rem; text-align: center; }
+      @media (max-width: 650px) {
+        .page { width: min(100% - 28px, 520px); padding-top: 22px; }
+        header { margin-bottom: 36px; }
+        .hero { padding: 30px 24px; }
+        .content { grid-template-columns: 1fr; }
+        .card { padding: 24px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header>
+        <div class="brand">FRONT-END CLASS</div>
+        <div class="tag">Ghi chú bài học</div>
+      </header>
+
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">Bài học hôm nay</p>
+        <h1 id="page-title">Làm quen với thiết kế Responsive</h1>
+        <p>Khám phá cách bố cục trang web thích ứng với nhiều kích thước màn hình bằng CSS, media queries và hình ảnh linh hoạt.</p>
+      </section>
+
+      <section class="content" aria-label="Nội dung bài học">
+        <article class="card">
+          <h2>Hôm nay chúng ta học gì?</h2>
+          <p>Bài thực hành tạo bố cục hai cột bằng CSS, sau đó dùng các điểm ngắt để điều chỉnh giao diện trên màn hình nhỏ. Bạn cũng sẽ tìm hiểu cách chọn hình ảnh phù hợp theo độ rộng màn hình và cách tùy biến nội dung khi in trang.</p>
+          <a class="lesson-link" href="Bai1.html">Mở bài 1 <span aria-hidden="true">→</span></a>
+        </article>
+
+        <aside class="card">
+          <h2>Kiến thức chính</h2>
+          <ul>
+            <li><span>01</span> Bố cục cột với CSS</li>
+            <li><span>02</span> Media queries và breakpoint</li>
+            <li><span>03</span> Hình ảnh thích ứng với màn hình</li>
+            <li><span>04</span> Tùy chỉnh giao diện khi in</li>
+          </ul>
+        </aside>
+      </section>
+      <footer>Học từng bước, xây dựng giao diện tốt trên mọi thiết bị.</footer>
+    </main>
+  </body>
+</html>
