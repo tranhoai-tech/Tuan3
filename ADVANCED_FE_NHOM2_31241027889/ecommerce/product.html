@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cà Phê Việt – Chi tiết sản phẩm</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+  <!-- bootstrap-star-rating (thay cho các icon sao viết tay) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-star-rating@4.1.2/css/star-rating.min.css">
+  <!-- xZoom (zoom + chọn ảnh) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/payalord/xZoom@master/dist/xzoom.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="Logo" class="homepage-header-logo" height="30"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="main-nav">
+      <ul class="nav navbar-nav">
+        <li ><a href="index.html">Trang chủ</a></li>
+        <li ><a href="status.html">Đơn hàng</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Danh mục <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html">Cà phê hạt</a></li><li><a href="index.html">Cà phê xay</a></li>
+            <li role="separator" class="divider"></li><li><a href="index.html">Cà phê đặc biệt</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left hidden-xs search-form">
+        <div class="form-group"><input type="text" class="form-control" placeholder="Tìm sản phẩm"></div>
+        <button type="submit" class="btn btn-default">Tìm</button>
+      </form>
+      <form class="visible-xs-inline-block search-form" style="margin-top:10px">
+        <div class="form-group"><input type="text" class="form-control" placeholder="Tìm sản phẩm"></div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="badge pull-right" id="cart-count">0</span><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
+        <li><a href="status.html"><i class="glyphicon glyphicon-user"></i></a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModal">Đăng nhập</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container" id="content">
+  <div class="row">
+    <div class="col-sm-4 col-md-3">
+      <h3 class="sidebar-title">Danh mục</h3>
+      <ul class="list-group" id="category-list"></ul>
+    </div>
+    <div class="col-sm-8 col-md-9" id="product-detail"></div>
+  </div>
+</div>
+<div class="footer">© 2026 Cà Phê Việt – Bài tập Chương 6 Advanced FrontEnd</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog"><div class="modal-dialog modal-sm"><div class="modal-content">
+  <div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Đăng nhập</h4></div>
+  <div class="modal-body"><form onsubmit="return false"><div class="form-group"><input class="form-control" placeholder="Email"></div>
+  <div class="form-group"><input type="password" class="form-control" placeholder="Mật khẩu"></div><button class="btn btn-success btn-block">Đăng nhập</button></form></div>
+</div></div></div>
+<div class="modal fade" id="reviewModal" tabindex="-1" role="dialog"><div class="modal-dialog"><div class="modal-content">
+  <form id="review-form">
+  <div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Viết đánh giá</h4></div>
+  <div class="modal-body">
+    <div class="form-group"><label>Họ tên</label><input id="review-name" class="form-control" placeholder="Tên của bạn"></div>
+    <div class="form-group"><label>Chấm điểm</label><input id="review-rating" type="number" class="rating-loading" value="5"></div>
+    <div class="form-group"><label>Nhận xét</label><textarea id="review-text" class="form-control" rows="3" required></textarea></div>
+  </div>
+  <div class="modal-footer"><button type="submit" class="btn btn-success">Gửi đánh giá</button></div>
+  </form></div></div></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-star-rating@4.1.2/js/star-rating.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/payalord/xZoom@master/dist/xzoom.min.js"></script>
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+<script>$(initDetail);</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+<rect width="600" height="600" fill="#f6f1ea"/>
+<ellipse cx="300" cy="545" rx="170" ry="18" fill="#00000018"/>
+<path d="M170 120 L430 120 L450 520 Q300 545 150 520 Z" fill="#2f4a5e" stroke="#2b1a10" stroke-width="5"/>
+<path d="M170 120 L430 120 L424 160 L176 160 Z" fill="#9fb7c4" stroke="#2b1a10" stroke-width="5"/>
+<rect x="215" y="230" width="170" height="190" rx="12" fill="#fff8ee" stroke="#2b1a10" stroke-width="4"/>
+<circle cx="300" cy="285" r="28" fill="#2f4a5e"/>
+<path d="M285 275 q15 -20 30 0 q-6 28 -15 36 q-9 -8 -15 -36z" fill="#fff8ee"/>
+<text x="300" y="360" font-family="Arial" font-weight="bold" font-size="26" text-anchor="middle" fill="#2b1a10">BLEND</text>
+<text x="300" y="392" font-family="Arial" font-size="16" text-anchor="middle" fill="#6b4a33">Cà phê Việt - 500g</text>
+</svg>

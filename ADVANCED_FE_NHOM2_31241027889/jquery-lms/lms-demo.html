@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demo LMS-UEH + jQuery</title>
+<style>
+ body{font-family:Segoe UI,Arial,sans-serif;max-width:980px;margin:20px auto;padding:0 14px;color:#222}
+ h1{font-size:22px} ul.topics{list-style:none;padding:0} li.section{border:1px solid #ddd;border-radius:6px;margin:8px 0;padding:10px 14px;background:#fff}
+ .sectionname{margin:0 0 6px;font-size:17px;color:#0f6cbf} ul.img-text{list-style:none;padding-left:14px;margin:0}
+ .activity{margin:6px 0} .activity-dates{font-size:12px;color:#666} .accesshide{position:absolute;left:-10000px}
+ #result{background:#10243e;color:#e8f1ff;border-radius:6px;padding:12px 16px;white-space:pre-wrap;font-family:Consolas,monospace;font-size:13px}
+ button{padding:6px 14px;margin:6px 0}
+</style></head><body>
+<h1>Trang demo mô phỏng cấu trúc HTML của LMS-UEH (Moodle)</h1>
+<p>Các class dùng giống LMS thật: <code>li.section</code>, <code>.sectionname</code>, <code>.modtype_assign</code>, <code>.instancename</code>, <code>.activity-dates</code>.</p>
+<ul class="topics">
+  <li class="section main" id="section-0" data-number="0" aria-label="Thông báo chung"><div class="content">
+    <h3 class="sectionname"><a href="#">Thông báo chung</a></h3><ul class="section img-text">
+      <li class="activity resource modtype_resource"><span class="instancename">Slide bài giảng<span class="accesshide"> Tệp</span></span></li>
+    </ul></div></li>
+  <li class="section main" id="section-1" data-number="1" aria-label="Tài liệu tham khảo"><div class="content">
+    <h3 class="sectionname"><a href="#">Tài liệu tham khảo</a></h3><ul class="section img-text">
+      <li class="activity resource modtype_resource"><span class="instancename">Slide bài giảng<span class="accesshide"> Tệp</span></span></li>
+    </ul></div></li>
+  <li class="section main" id="section-2" data-number="2" aria-label="Chương 1: Tổng quan Thương mại điện tử"><div class="content">
+    <h3 class="sectionname"><a href="#">Chương 1: Tổng quan Thương mại điện tử</a></h3><ul class="section img-text">
+      <li class="activity assign modtype_assign" id="module-20">
+        <div class="activityinstance"><a href="#"><span class="instancename">Bài tập cá nhân 1<span class="accesshide"> Bài tập</span></span></a></div>
+        <div class="activity-dates"><div>Hạn nộp: Thứ Sáu, 12 Tháng 9 2026, 11:59 PM</div></div></li>
+    </ul></div></li>
+  <li class="section main" id="section-3" data-number="3" aria-label="Chương 2: HTML5 & CSS cơ bản"><div class="content">
+    <h3 class="sectionname"><a href="#">Chương 2: HTML5 & CSS cơ bản</a></h3><ul class="section img-text">
+      <li class="activity assign modtype_assign" id="module-30">
+        <div class="activityinstance"><a href="#"><span class="instancename">Bài tập cá nhân 2 – Cải tiến giao diện Cocoon<span class="accesshide"> Bài tập</span></span></a></div>
+        <div class="activity-dates"><div>Hạn nộp: Thứ Sáu, 26 Tháng 9 2026, 11:59 PM</div></div></li>
+    </ul></div></li>
+  <li class="section main" id="section-4" data-number="4" aria-label="Chương 3: Bootstrap & Responsive"><div class="content">
+    <h3 class="sectionname"><a href="#">Chương 3: Bootstrap & Responsive</a></h3><ul class="section img-text">
+      <li class="activity assign modtype_assign" id="module-40">
+        <div class="activityinstance"><a href="#"><span class="instancename">Bài tập nhóm – Landing page<span class="accesshide"> Bài tập</span></span></a></div>
+        <div class="activity-dates"><div>Hạn nộp: Thứ Sáu, 10 Tháng 10 2026, 11:59 PM</div></div></li>
+      <li class="activity assign modtype_assign" id="module-41">
+        <div class="activityinstance"><a href="#"><span class="instancename">Bài tập cá nhân 3<span class="accesshide"> Bài tập</span></span></a></div>
+        <div class="activity-dates"><div>Hạn nộp: Thứ Sáu, 17 Tháng 10 2026, 11:59 PM</div></div></li>
+    </ul></div></li>
+  <li class="section main" id="section-5" data-number="5" aria-label="Chương 4: JavaScript & jQuery"><div class="content">
+    <h3 class="sectionname"><a href="#">Chương 4: JavaScript & jQuery</a></h3><ul class="section img-text">
+      <li class="activity assign modtype_assign" id="module-50">
+        <div class="activityinstance"><a href="#"><span class="instancename">Bài tập JavaScript-Labs<span class="accesshide"> Bài tập</span></span></a></div>
+        <div class="activity-dates"><div>Hạn nộp: Thứ Sáu, 31 Tháng 10 2026, 11:59 PM</div></div></li>
+    </ul></div></li>
+  <li class="section main" id="section-6" data-number="6" aria-label="Chương 5: Quản lý dự án TMĐT"><div class="content">
+    <h3 class="sectionname"><a href="#">Chương 5: Quản lý dự án TMĐT</a></h3><ul class="section img-text">
+      <li class="activity resource modtype_resource"><span class="instancename">Slide bài giảng<span class="accesshide"> Tệp</span></span></li>
+    </ul></div></li>
+  <li class="section main" id="section-7" data-number="7" aria-label="Chương 6: Advanced FrontEnd"><div class="content">
+    <h3 class="sectionname"><a href="#">Chương 6: Advanced FrontEnd</a></h3><ul class="section img-text">
+      <li class="activity assign modtype_assign" id="module-70">
+        <div class="activityinstance"><a href="#"><span class="instancename">Bài tập cá nhân Advance FE<span class="accesshide"> Bài tập</span></span></a></div>
+        <div class="activity-dates"><div>Hạn nộp: Chủ Nhật, 6 Tháng 12 2026, 11:59 PM</div></div></li>
+    </ul></div></li>
+</ul>
+<h2>Kết quả chạy lms.js</h2>
+<button id="rerun">Chạy lại</button>
+<div id="result"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.LMS_AUTORUN = false;</script>
+<script src="lms.js"></script>
+<script>
+$(function () {
+  function show() {
+    var r = window.runLmsReport();           // lms.js cũng ghi mọi dòng ra Console
+    var out = ['1) Bài nộp thứ 5: ' + (r.fifth || '(không có)'), '', '2) Các chủ đề của môn học:'];
+    $.each(r.topics, function (i, t) {
+      if (!t.hasAssignment) out.push('  - ' + t.title + ' → KHÔNG có bài tập');
+      else $.each(t.assignments, function (j, a) { out.push('  - ' + t.title + ' → CÓ bài tập "' + a.name + '", deadline: ' + a.deadline); });
+    });
+    $('#result').text(out.join('\n'));
+  }
+  $('#rerun').on('click', show); show();
+});
+</script></body></html>
